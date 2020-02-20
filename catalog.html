@@ -8,7 +8,7 @@
     <header class="header">
       <div class="up-line">
         <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-        <form class="search-form" action="" method="get">
+        <form class="search-form" action="#" method="get">
           <input id="search" type="search" name="search" placeholder="Поиск:">
           <label class="search" for="search"></label>
         </form>
@@ -70,10 +70,55 @@
        </div>
      <aside>
         <form>
+          <section class="cost">
+            <h3>цена:</h3>
+            <div class="range-control">
+              <div class="range">
+                <div class="slider-range"></div>
+              </div>
+              <div class="circle circle-left"></div>
+              <div class="circle circle-right"></div>
+            </div>
+            <label class="min-price">
+              <input name="price" type="text" value="0">
+            </label>
+            <span>—</span>
+            <label class="max-price">
+              <input name="price" type="text" value="30000">
+            </label>
+          </section>
+          <section class="filter-1">
+            <h3>производители:</h3>
+             <div class="checkbox">
+               <input type="checkbox" id="bosch" checked="">
+               <label for="bosch">bosch</label>
 
+               <input type="checkbox" id="interskol">
+               <label for="interskol">интерскол</label>
+
+               <input type="checkbox" id="makita" checked="">
+               <label for="makita">makita</label>
+
+               <input type="checkbox" id="dewalt">
+               <label for="dewalt">dewalt</label>
+
+               <input type="checkbox" id="hitachi">
+               <label for="hitachi">hitachi</label>
+             </div>
+           </section>
+          <section class="filter-2">
+            <h3>питание:</h3>
+            <div class="grid">
+              <input type="radio" id="adaptive" name="grup" checked="">
+              <label for="adaptive">аккумуляторные</label>
+
+              <input type="radio" id="fixed" name="grup">
+              <label for="fixed">сетевые</label>
+            </div>
+          </section>
+          <button class="btn btn-filter" type="submit">показать</button>
         </form>
       </aside>
-
         <ul class="product-list">
             <li class="product-item">
                 <ul>    
@@ -193,7 +238,7 @@
              </div>
           </li>
        </ul>
-    </main>  
+    </main>
   <footer class="footer">
     <div class="down-line">
       <a class="logo" href="index.html"></a>
@@ -244,5 +289,15 @@
         <p>Разработано - <br><a href="https://htmlacademy.ru">HTML Academy</a></p>
     </div>
 </footer>
+<div class="modal-added">
+  <a class="modal-close" href="catalog.html">Закрыть</a>
+  <div class="modal-content">
+      <p class="modal-text">Товар добавлен в корзину!</p>
+  </div>
+  <div class="modal-footer">
+      <button class="modal-btn" type="button" name="send">Оформить заказ</button>
+      <a class="modal-btn modal-close-btn" href="#">Продолжить покупки</a>
+  </div>
+</div>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <header class="header">
       <div class="up-line">
         <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-        <form class="search-form" action="" method="get">
+        <form class="search-form" action="#" method="get">
           <input id="search" type="search" name="search" placeholder="Поиск:">
           <label class="search" for="search"></label>
         </form>
@@ -312,7 +312,36 @@
               <p>Разработано - <br><a href="https://htmlacademy.ru">HTML Academy</a></p>
           </div>
 </footer>
+<form class="modal-write" method="post" action="#">
+  <a class="modal-close" href="catalog.html">Закрыть</a>
+    <div class="modal-answer">
+      <div class="modal-top-write">
+        <div class="modal-text">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required="">
+        </div>
+        <div class="modal-text">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа" required="">
+        </div>
+      </div>
+      <label for="text-letter">Текст письма:</label>
+      <textarea class="modal-letter" id="text-letter" name="letter" placeholder="В свободной форме" required=""></textarea>
+    </div>
+  <div class="send">
+    <button class="btn" type="submit">Отправить</button>
+  </div>
+  </form>
+  <div class="modal-added">
+    <div class="modal-content">
+      <a class="modal-close" href="catalog.html">Закрыть</a>
+        <p class="modal-text">Товар добавлен в корзину!</p>
+    </div>
+    <div class="modal-footer">
+        <button class="modal-btn" type="button" name="send">Оформить заказ</button>
+        <a class="modal-btn modal-close-btn" href="#">Продолжить покупки</a>
+    </div>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+   </div>
   </body>
 </html>
