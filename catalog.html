@@ -3,10 +3,9 @@
   <head> 
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/minstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -24,8 +23,8 @@
         <div class="container">
            <div class="up-line">
              <div class="about">
-              <p>Интернет-магазин<br> 
-              строительных материалов<br>
+              <p>Интернет-магазин 
+              строительных материалов <br>  
               и инструментов для ремонта</p>
               </div>
               <div class="contact">
@@ -78,7 +77,7 @@
             </label>
             <span>—</span>
             <label class="max-price">
-              <input name="price" type="text" value="30000">
+              <input name="price" type="text" value="30000" class="min-max">
             </label>
           </section>
           <section class="filter-1">
@@ -151,6 +150,7 @@
               <div class="price">25500 Р.</div>
             </div>
               <div class="catalog-item">
+                <div class="flag flag-new">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy buy_popup">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -171,6 +171,7 @@
                 <div class="price">15500 Р.</div>
               </div>
                 <div class="catalog-item">
+                  <div class="flag flag-new">новинка</div>
                   <div class="actions">
                     <a href="#" class="buy buy_popup">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
@@ -186,11 +187,12 @@
                       <a href="#" class="bookmark">В закладки</a>
                     </div>
                     <div class="image"><img width="218" height="168" src="img/item3.jpg" alt="bosh bfg 2000"></div>
-                    <div class="title">Перфоратор BOSCH BFG 62000</div>
+                    <div class="title">Перфоратор BOSCH BFG 2000</div>
                     <div class="no-discount"></div>
                     <div class="price">12500 Р.</div>
                   </div>
                 <div class="catalog-item">
+                  <div class="flag flag-new">новинка</div>
             <div class="actions">
               <a href="#" class="buy buy_popup">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
@@ -233,7 +235,8 @@
   <div class="product-description">
     <section class="container">
       <h2>пара слов о перфораторах</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <p class="cont_p">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
   </div>
     </main>
@@ -243,7 +246,7 @@
           <div class="left-footer">
             <a class="logo" href="index.html"><img src="img/footer-logo.svg" alt="logo"></a>
               <p>
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                 +7 (812) 555-05-55
               </p>
           </div>
@@ -266,7 +269,7 @@
     </div>
          <div class="dark-blue-footer">
           <div class="container">
-           <p class="bottom-footer">© 2010–2019 Компания «Техномарт»<br>
+           <p class="bottom-footer">© 2010–2019 Компания «Техномарт»
               Все права защищены</p>
               <p class="footer-social">
                 <a class="social-btn social-vk" href="#"></a>

@@ -37,7 +37,7 @@ aside {
     text-align: center;
     background-color: #ee3643;
     text-transform: uppercase;
-    padding: 14px 0 5px 0
+    padding: 12px 0 5px 0
 }
 
 .logo:after {
@@ -56,7 +56,7 @@ aside {
 input[type="search"] {
     width: 270px;
     border: none;
-    padding: 12px 0 12px 50px;
+    padding:12px 0 12px 48px;
     font-size: 17px;
     line-height: 18px;
     cursor: pointer;
@@ -79,7 +79,7 @@ input[type="search"]::placeholder { color:white; }
 .icon_search {
 	background-image: url(../img/icon-search-tr.png);
 	background-repeat: no-repeat;
-	background-position: 8% 50%;
+	background-position: 16px 12px;
 }
 .icon_search:hover {
 	background-image: url(../img/icon-search-white!.png);
@@ -182,12 +182,14 @@ input[type="search"]::placeholder { color:white; }
 }
 
 .about {
-    width: 198px;
+    width: 197px;
+    height: 60px;
     padding: 2px 50px 0 52px;
     color: #ee3643;
     font-size: 16px;
     font-style: italic;
-    line-height: 23px
+    line-height: 23px;
+  
 }
 .about p {
     margin: 0;
@@ -196,11 +198,10 @@ input[type="search"]::placeholder { color:white; }
     width: 300px;
     margin:0  
 }
-
 .phone {
     width: 145px;
     border: 3px solid #fff;
-    padding: 10.5px 50px 10.5px 72px;
+    padding: 10px 50px 10px 71px;
     font-size: 21px;
     line-height: 18px;
     color: #e9292a;
@@ -239,7 +240,8 @@ input[type="search"]::placeholder { color:white; }
     width: 373px;
     display: flex;
     justify-content: space-around;
-    padding: 21px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .breadcrumbs a, .breadcrumbs span {
     position: relative;
@@ -250,12 +252,12 @@ input[type="search"]::placeholder { color:white; }
 .home:before {
     content: "";
     position: absolute;
-    left: -20px;
+    left: -22px;
+    top: 2px;
     width: 25px;
     height: 25px;
     background-image: url(../img/icon-home.svg);
 	background-repeat: no-repeat;
-	background-position: 0% 25%;
 }
 
 .home:after {
@@ -274,19 +276,20 @@ input[type="search"]::placeholder { color:white; }
 .page-1:after, .page-2:after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 53px;
+    left: 56px;
     width: 25px;
     height: 25px;
     background-image: url(../img/icon-right-small.svg);
 	background-repeat: no-repeat;
 	background-position: 75% 20%;
 }
+.page-1{
+    margin-left: -6px;
+}
 .page-2:after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 83px;
+    left:85px;
 }
 form .filter {
     margin-bottom: 0;
@@ -304,7 +307,7 @@ form h3 {
     margin-bottom: 23px;
 }
 .cost h3 {
-    margin-top: 10px;
+    margin-top:12px;
 
 }
 .cost h3, .filter-1 h3, .filter-2 h3 {
@@ -313,6 +316,11 @@ form h3 {
 }
 .min-price, .max-price {
     text-transform: uppercase;
+    font: 12px/17px "PT Sans","Arial",sans-serif;
+}
+.min-price input[type="text"]:hover,.max-price input[type="text"]:hover{
+outline: none;
+border:none
 }
 .triangle {
     width: 43px;
@@ -452,7 +460,7 @@ form .btn-filter:active {
 }
 .right-result {
     width: 700px;
-    float: right
+    justify-content:flex-end 
 }
 .result {
     display: flex;
@@ -474,7 +482,7 @@ form .btn-filter:active {
 .caption {
     font-size: 30px;
     line-height: 30px;
-    padding: 30px 28px 30px;
+    padding: 31px 28px 29px;
     margin: 0;
     text-transform: uppercase;
     font-weight: normal;
@@ -514,7 +522,7 @@ form .btn-filter:active {
     line-height: 18px;
     background-image: url(../img/cart-icon-tr.png);
     background-repeat: no-repeat;
-    background-position: 15% 49%;
+    background-position: 18px 12px;
 }
     
 .basket_2 {
@@ -540,14 +548,18 @@ form .btn-filter:active {
     flex-wrap: wrap;
     background-color: #32425c;
     font-size: 17px;
-    margin-top: 38px;
-    padding: 0 23px;
+    margin-top: 37px;
+    padding-right: 25px;
+    padding-left: 22px;
     border-bottom: 5px solid #293449
 }
 
 .navigation a {
-    padding: 16px 30px 15px
+    padding-top: 18px;
+    padding-bottom: 15px;
+    
 }
+
 
 .navigation a:hover {
     background-color: #293449;
@@ -558,6 +570,7 @@ form .btn-filter:active {
     background-color: #1d2739;
     color: #777d88
 }
+
 .promo {
     display: flex;
     flex-wrap: wrap;
@@ -586,12 +599,13 @@ form .btn-filter:active {
 	background-color: white;
 	text-decoration: none;
 	font-size: 21px;
-	color: black;
+    color: black;
+    
 }
 .user-auth .login {
 	position: relative;
-	margin-right: 10px;
-    padding-left: 50px;
+	margin-right: 17px;
+    padding-left: 55px;
     background-image: url(../img/icon-login-gray.png);
 	background-repeat: no-repeat;
 	background-position: 17% 50%;
@@ -725,7 +739,11 @@ form .btn-filter:active {
     cursor: pointer
 }
 .slide .all-pop {
-    margin: 122px 0 0 25px;
+   
+    margin-top: 128px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
     width: 195px;
     height: 38px;}
 
@@ -749,7 +767,9 @@ form .btn-filter:active {
 
 .slide p {
     margin-top: 4px;
-    font: 18px/24px "PT Sans","Arial",sans-serif
+    height: 17px;
+    font-family: Cuprum;
+    font-size: 18px;
 }
 
 #btn-1:checked ~ .switching .slide:nth-child(1) {
@@ -795,11 +815,12 @@ form .btn-filter:active {
     margin-top: 39px;
     height: 2px;
     background: #d7dcde;
+    width: 160px;
 }
 .slider-range {
     height: 2px;
     background: #00ca74;
-    width: 85%;
+    width: 133px;
 }
 .circle {
     position: absolute;
@@ -813,7 +834,7 @@ form .btn-filter:active {
     cursor: pointer;
 }
 .circle-right {
-    left: 145px;
+    left: 160px;
 }
 .catalog-items {
     width: 700px;
@@ -892,7 +913,7 @@ form .btn-filter:active {
     color: white;
     font-size: 14px;
     font-weight: normal;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum","Arial",sans-serif;
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
@@ -953,7 +974,9 @@ form .btn-filter:active {
 .catalog-item .title {
     font: bold 18px "PT Sans","Arial",sans-serif;
     margin: auto 25px;
-    color: #000;}   
+    color: #000;
+padding-top: 11px;
+line-height: 20px}   
   
   
 .catalog-item .discount {
@@ -971,14 +994,20 @@ form .btn-filter:active {
 .catalog-item .price {
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: 42px;
     margin-bottom: 20px;
     padding: 10px 30px;
     color: white;
     background: #ee3643;
     border-radius: 3px;
   }
-  
+.price{
+    font: bold 17px/18px "PT Sans","Arial",sans-serif;
+}
+ 
 .catalog-item .price:after {
     content: "";
     
@@ -989,7 +1018,7 @@ form .btn-filter:active {
     width: 0;
     height: 0;
     
-    border: 20px solid white;
+    border: 19px solid white;
     border-left-color: #ee3643;
   }
 .popular-items {
@@ -1002,7 +1031,7 @@ form .btn-filter:active {
     width: 285px;
     display: flex;
     justify-content: space-between;
-    margin: 33px 0 30px 0;
+    margin: 30px 0 30px 0;
 }
 .pages a {
     display: flex;
@@ -1036,19 +1065,22 @@ form .btn-filter:active {
 }
 .product-description {
     background-color: #f2f6f8;
-    padding-bottom: 56px;
+    padding-bottom: 55px;
 }
 .product-description h2 {
     padding-top: 69px;
+    
 }
 .popular-items h2 {
 	font-size: 30px;
     line-height: 30px;
     margin-left: 28px;
-    padding: 6px 0;
+    padding-top: 5px;
+    padding-bottom: 6px;
     font-weight: normal;
     color: #32425c;
-    text-transform: uppercase}
+    text-transform: uppercase;
+}
 
 .all-pop{
     display: flex;
@@ -1081,17 +1113,17 @@ form .btn-filter:active {
 
 .manufacturers {
 	text-align: center;
-	float: left;
+	justify-content: flex-start;
 	margin-top: 21px;
     margin-bottom: 64px;
     background-color: white;
 }
 .manufacturers a {
-    float: left;
+    justify-content: flex-start;
     
 }
 .brend{
-	float: left;
+	justify-content: flex-start;
 	width: 220px;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -1110,7 +1142,8 @@ form .btn-filter:active {
 	margin-right: 0;
 }
 .brend img {
-	vertical-align: middle;
+    vertical-align: middle;
+    
 }
 .service {
     margin-top: 415px;
@@ -1127,8 +1160,11 @@ form .btn-filter:active {
     margin: 28px 0;
     color: #000;
     text-transform: uppercase;
+    font-weight: normal;
 }
-
+.product-description p{
+    margin-top: 30px;
+}
 .service h2 {
     padding-top: 68px;
     margin-bottom: 30px
@@ -1225,7 +1261,10 @@ form .btn-filter:active {
     font-weight: normal;
     margin-top: 4px
 }
-
+.srv-content p{
+    font: 13px/24px "PT Sans","Arial",sans-serif;
+    color: #000;
+}
 .delivery-slide {
     width: 275px
 }
@@ -1239,7 +1278,7 @@ form .btn-filter:active {
     display: flex;
     justify-content: space-between;
 }
-.delivery-m {margin-bottom: 84px;}
+.delivery-m {margin-bottom: 86px;}
 
 .delivery-m h1, .contact-main h2 {
     font-size: 30px;
@@ -1247,8 +1286,8 @@ form .btn-filter:active {
     color: #000;
     text-transform: uppercase;
     font-weight: normal;
-    margin-bottom: 30px;
-    padding-top: 10px;
+    margin-bottom: 28px;
+    padding-top: 8px;
 }
 .delivery-m p, .contact-main p{
     font: 13px/24px "PT Sans","Arial",sans-serif;
@@ -1285,7 +1324,7 @@ padding-top: 50px;
 }
 .contact-main{
     width: 300px;
-    margin-top:-48px
+    margin-top:-50px
 }
 .contact-main p{
     width: 190px;
@@ -1300,6 +1339,7 @@ padding-top: 50px;
     background-color: #32425c;
     padding-top: 20px;
     display: flex;
+    padding-bottom: 3px;
 }
 .dark-blue-footer{
     background-color: #293449;
@@ -1311,8 +1351,8 @@ padding-top: 50px;
 }
 
 .left-footer .logo {
-    padding-top: 20px;
-    padding-bottom: 16.5px;
+    padding-top: 19px;
+    padding-bottom: 14px;
     padding-right: 0px;
     padding-left: 0px;
     font-size: 30px;
@@ -1322,7 +1362,8 @@ padding-top: 50px;
     color: #f1f5f7;
     margin: 33px 0 47px 3px;
     font-size: 18px;
-    line-height: 24px}
+    line-height: 24px;
+    width: 324px;}
 
 .right-footer {
     width: 550px;
@@ -1351,7 +1392,8 @@ margin-top: -18px;
 } 
 .navigation-footer-ylw a {
     color:#ffd180;
-    padding-left: 27px;
+    padding-left: 25px;
+    margin-bottom: 3px;
     }
 .dark-blue-footer .container  {
     display: flex;
@@ -1359,10 +1401,12 @@ margin-top: -18px;
     height: 107px;
     font-size: 16px;
     line-height: 18px;
-    color: #fff}
+    color: #fff;
+    }
 
 .bottom-footer{
-    width: 230px;
+    
+    width: 228px;
     }
 .footer-social{
     display: flex;
@@ -1467,14 +1511,14 @@ text-transform: none;
 }
 .modul_name {
     width: 220px;
-    float: left;
+    justify-content: flex-start;
 }
 .modul_email {
     width: 220px;
-    float: right;
+    justify-content:flex-end ;
 }
 .modul_text {
-    float: left;
+    justify-content: flex-start;
     margin-bottom: 25px;
     margin-top: 18px;
 }
@@ -1495,7 +1539,7 @@ text-transform: none;
 }
 .modul_gray{
     width: 100%;
-    float: left;
+    justify-content: flex-start;
     background: #f4f4f4;
 }
 .modul_map {
@@ -1522,7 +1566,7 @@ text-transform: none;
     width: 100px;
     font-size: 18px;
     line-height: 18px;
-    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-family: "Cuprum","Arial",sans-serif;
     color: black;
     margin-bottom: 13px;
     
@@ -1563,6 +1607,10 @@ text-transform: none;
 .modul_catalog_btn {
     background: #f1f1f1;
 }
+
+iframe{ border-style: none}
+
+
 .modul_catalog_btn input[type="submit"]:first-child {
     width: 220px;
     padding: 11px 0 11px 0;
@@ -1624,6 +1672,9 @@ input[type=email]:focus, input[type=text]:focus, textarea:focus {
 .modul_close_show {
 	display: block;
 	animation: bounce 0.6s;
+}
+.cont_p{
+    width: 911px;
 }
 
 
