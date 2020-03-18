@@ -880,7 +880,7 @@ form .btn-filter:active {
     
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 20;
+   
   }
   
 .catalog-item .flag-new {
@@ -895,7 +895,7 @@ form .btn-filter:active {
     height: 88px;
     padding: 40px 0;
     background-color: rgba(255,255,255,0.9);
-    z-index: 10;
+   
   }
   
 .catalog-item .actions .buy,
@@ -1460,7 +1460,7 @@ text-transform: none;
     width: 620px;
     height: 423px;
     box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
-    z-index: 100;
+   
 }
 .modul input[type="text"] {
     border: 2px solid #d7dcde;
@@ -1601,13 +1601,13 @@ text-transform: none;
 .modul_catalog {
     position: fixed;
     top: 40%;
-    left: 45%;
-    
+    left: 50%;
     border-top: 5px solid #ee3643;
     display: none;
     background: white;
     margin: -141px 0 0 -310px;
     width: 620px;
+    
     height: 278px;
     box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
     background: white url(../img/modal-check.png) no-repeat 14% 24%;
@@ -1679,8 +1679,12 @@ input[type=email]:focus, input[type=text]:focus, textarea:focus {
 
 .modul_close_show {
 	display: block;
-	animation: bounce 0.6s;
+    animation: bounce 0.6s;
+  
 }
 .cont_p{
     width: 911px;
+}
+.modul_catalog .modul_close_show{
+    z-index: 1000;
 }
