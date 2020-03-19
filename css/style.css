@@ -318,7 +318,8 @@ form h3 {
     text-transform: uppercase;
     font: 12px/17px "PT Sans","Arial",sans-serif;
 }
-.min-price input[type="text"]:hover,.max-price input[type="text"]:hover{
+.min-price input[type="text"]:hover,.max-price input[type="text"]:hover,
+.min-price input[type="text"]:focus,.max-price input[type="text"]:focus{
 outline: none;
 border:none
 }
@@ -385,8 +386,16 @@ border:none
     justify-content: space-between;
 }
 form input[type="radio"],form input[type="checkbox"] {
-    display: none
+    opacity: 0;
+    position: absolute;
 }
+
+form input[type="radio"]:focus+label,form input[type="checkbox"]:focus+label{
+    opacity: 1;
+    font-weight: bold;
+}
+
+
 form input[type="radio"]+label, form input[type="checkbox"]+label {
     position: relative;
     padding: 0 0 20px 35px;
@@ -406,6 +415,8 @@ form input[type="radio"]+label:before, form input[type="checkbox"]+label:before 
     border: 2px solid #c9c9c9;
     border-radius: 50%;
 }
+
+
 form input[type="checkbox"]+label:before {
     border-radius: 5px;
 }
@@ -440,7 +451,7 @@ form input[type="radio"]:checked+label:after {
 }
 form .btn-filter {
     width: 138px;
-    height: 38px;
+    height: 36px;
     background: #fff;
     font-family: "PT Sans","Arial",sans-serif;
     font-size: 14px;
@@ -635,9 +646,9 @@ form .btn-filter:active {
 .cnt a {
 	display: block;
 	width: 90px;
-	padding: 9px 23px;
+	padding: 10px 23px;
 	margin-left: 25px;
-	margin-bottom: 19px;
+	margin-bottom: 25px;
 	border-radius: 3px;
 	text-align: center;
 	line-height: 18px;
@@ -769,7 +780,7 @@ form .btn-filter:active {
 .slide p {
     margin-top: 4px;
     height: 17px;
-    font-family: Cuprum;
+    font-family:"Cuprum","Arial",sans-serif;
     font-size: 18px;
 }
 
@@ -903,7 +914,8 @@ form .btn-filter:active {
     display: block;
     width: 129px;
     margin: 0 auto;
-    margin-bottom: 7px;
+    margin-top: 4px;
+    margin-bottom: 8px;
     padding: 7px 0;
     
     background-color: #63a63e;
@@ -1156,9 +1168,7 @@ line-height: 20px}
     text-transform: uppercase;
     font-weight: normal;
 }
-.product-description p{
-    margin-top: 30px;
-}
+
 .service h2 {
     padding-top: 68px;
     margin-bottom: 30px
@@ -1169,7 +1179,7 @@ line-height: 20px}
     line-height: 24px;
     text-transform: uppercase;
     font-weight: normal;
-    margin: 0 0 34px 0;
+    margin: 4px -1px 32px 0px;
     color: #32425c
 }
 
@@ -1627,7 +1637,7 @@ iframe{ border-style: none}
     color: white;
     background: #ee3643;
     border: none;
-    margin: 36px 20px 37px 79px;
+    margin: 37px 20px 39px 79px;
     border-radius: 3px;
 }
 .modul_catalog_btn input[type="submit"]:last-child {
@@ -1638,7 +1648,7 @@ iframe{ border-style: none}
     color: black;
     background: white;
     border: none;
-    margin: 0px 20px 0 0px;
+    margin: 2px 20px 0 0px;
     border-radius: 3px;
 }
 .modul_catalog_btn input[type="submit"]:last-child:hover {
@@ -1684,6 +1694,12 @@ input[type=email]:focus, input[type=text]:focus, textarea:focus {
 }
 .cont_p{
     width: 911px;
+    margin-bottom: -13px;
+}
+.cont_p2{
+    width: 750px;
+    margin-bottom: -10px;
+    
 }
 .modul_catalog .modul_close_show{
     z-index: 1000;
