@@ -1711,6 +1711,16 @@ a {
   text-transform: none;
 }
 
+.communication a:hover,
+.ft-copyright a:hover {
+  text-decoration: underline;
+}
+
+.communication a:active,
+.ft-copyright a:active {
+  color: #ee3643;
+}
+
 .ft-copyright {
   width: 100px;
 }
